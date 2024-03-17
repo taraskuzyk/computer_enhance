@@ -45,8 +45,8 @@ class AssembledInstruction:
     def disassemble(self) -> DisassembledInstruction:
         return DisassembledInstruction(
             mnemonic=OP_CODES[self.op_code],
-            reg1=REGISTERS[self.reg + self.w * 8],
-            reg2=REGISTERS[self.r_m + self.w * 8],
+            reg1=REGISTERS[self.r_m + self.w * 8],
+            reg2=REGISTERS[self.reg + self.w * 8],
         )
 
 
